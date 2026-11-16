@@ -17,7 +17,7 @@ function calculateTotal(items, discountCode) {
     total *= 0.9;
   }
 
-  if (subtotal < 100) {
+  if (subtotal < 100 && discountCode !== 'FREESHIP') {
     total += 5;
   }
 
