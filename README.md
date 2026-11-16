@@ -39,3 +39,18 @@ Lisasin testi, mis kontrollib, et funktsioon viskab vea, kui items ei ole massii
 Käivitasin käsu npm run coverage. Kõik 13 testi läbisid edukalt. Failide cart.js ja password.js koodikatvus oli kõigi näitajate järgi 100%. Katmata ridu ei olnud. 100% koodikatvus ei tõesta siiski, et programm on täiesti veatu.
 
 <img width="665" height="271" alt="image" src="https://github.com/user-attachments/assets/9949644e-da51-4fb5-8eb4-6a6a098bed30" />
+
+# 15-17
+
+Lisasin enne koodi muutmist sooduskoodi FREESHIP testi. Käivitasin npm test. Uus test ebaõnnestus: oodatud tulemus oli 10 €, kuid funktsioon tagastas 15 €. See on TDD Red-etapp.
+
+<img width="305" height="113" alt="image" src="https://github.com/user-attachments/assets/f1687f5f-536c-4101-8988-a52909fc03d9" />
+
+Muutsin saatmiskulu tingimust nii, et koodi FREESHIP korral saatmiskulu ei lisata. Käivitasin uuesti npm test ning kõik 14 testi läbisid edukalt. See on TDD Green-etapp.
+
+<img width="281" height="106" alt="image" src="https://github.com/user-attachments/assets/0692ad77-d46d-472a-9346-d6eae83e93ea" />
+
+Käivitasin regressioonikontrolliks käsud npm test ja npm run coverage. Kõik 14 testi läbisid edukalt. Kontrollisin, et FREESHIP annab tasuta saatmise ning varasemad funktsioonid töötavad endiselt õigesti: STUDENT10 allahindlus, saatmiskulu arvestamine, tühi ostukorv ja vigase sisendi kontroll. Uus muudatus ei rikkunud olemasolevat funktsionaalsust.
+
+<img width="556" height="251" alt="image" src="https://github.com/user-attachments/assets/961de22f-1958-41f5-8d5d-8c6a7b9381be" />
+
