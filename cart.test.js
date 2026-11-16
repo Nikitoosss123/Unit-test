@@ -29,3 +29,7 @@ test('99 eurosele ostule lisandub saatmiskulu', () => {
 test('100 eurose ostu saatmine on tasuta', () => {
   expect(calculateTotal([{ price: 100, qty: 1 }])).toBe(100);
 });
+
+test('annab vea, kui items ei ole massiiv', () => {
+  expect(() => calculateTotal('abc')).toThrow();
+});
